@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Home Box -->
+    <div class="home-box custom-box">
+        <h2>"Welcome to the Ultimate Trivia Challenge! Let's test your knowledge and have fun!"</h2>
+        <h3>Instructions:</h3>
+        <p>Total number of questions: <span class="total-questions">5</span></p>
+        <p>Time limits for the entire quiz.</p>
+        <button class="btn" onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz-box custom-box hide">
+        <div class="question-number">Question 1 of 5</div>
+        <div class="question-text">What is 22 + 6?</div>
+        <div class="option-container">
+            <div class="option">28</div>
+            <div class="option">99</div>
+            <div class="option">16</div>
+            <div class="option">56</div>
+        </div>
+        <button class="btn" onclick="nextQuestion()">Next</button>
+        <div class="progress-bar-container">
+            <div class="progress-bar"></div>
+        </div>
+        <div class="timer">
+            <p>Time Remaining: <span id="timer-display">60</span> seconds</p>
+        </div>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result-box custom-box hide">
+        <h1>Quiz Result</h1>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td><span id="total-questions"></span></td>
+            </tr>
+            <tr>
+                <td>Attempted</td>
+                <td><span id="total-attempted"></span></td>
+            </tr>
+            <tr>
+                <td>Correct</td>
+                <td><span id="total-correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong</td>
+                <td><span id="total-wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><span id="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Your Total Score</td>
+                <td><span id="total-score"></span></td>
+            </tr>
+        </table>
+        <button class="btn" onclick="tryAgain()">Try Again</button>
+        <button class="btn" onclick="goHome()">Go Home</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>
