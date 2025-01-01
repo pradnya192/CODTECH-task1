@@ -3,7 +3,7 @@ Name:Pradnya Abhay Magennavar
 Company:CODTECH IT SOLUTIONS
 ID:CT08DS528
 Domain:Frontend development
-Duration:december 12,2024 to january 12,2025
+Duration:december 12-2024 to january 12-2025
 
 Overview of Project
 Project:Interactive Quiz Application.
